@@ -1,0 +1,187 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+\definecolor{awesome}{HTML}{414141}
+%% Colors for text
+\definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{414141}
+\definecolor{graytext}{HTML}{414141}
+\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+% \headersocialsep[\quad\textbar\quad]
+\begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Miguel} \headerlastnamestyle{Cuan} \\
+	\vspace{2mm}
+	{\headersocialstyle{
+		\faEnvelope\ mihcuan@gmail.com | 
+		\faPhone\ (313) 213-2955 | 
+		\faMapMarker\ Dearborn, MI \\
+		\vspace{1mm}
+		\faLinkedinSquare\ linkedin.com/in/mcuan |
+		\faGithub\ github.com/mcuan}}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-2mm}
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BS in Mechatronics Engineering}
+	{Tecnologico de Monterrey}
+	{Monterrey, Mexico}
+	{Aug 2011 – Jun 2017}
+	{}
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-7mm}
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Connected Vehicle Embedded Software Engineer}
+	{Ford Motor Company}
+	{Dearborn, MI}
+	{Sep 2018 – Present}
+	{\begin{cvitems}
+		\item {Lead developer of the Connected Vehicle Products and Platforms team, supporting all stages of product development lifecycle including design, implementation, testing, validation and software integration.}
+		\item {Developed C/C++ embedded software applications, cross compiled for an ARM target running Embedded Linux.}
+		\item {Developed interfaces to interact with different ECUs on the vehicle through CAN, Ethernet, and other wireless protocols.}
+		\item {Developed multiple prototypes and proof-of-concepts for testing a variety of new technologies for the next generation of connected vehicles.}
+		\end{cvitems}}
+	\cventry
+	{Graphical User Interface Software Engineer}
+	{Visteon Corporation}
+	{Queretaro, Mexico}
+	{Mar 2018 – Sep 2018}
+	{\begin{cvitems}
+		\item {Embedded software development for digital display Instrument Panel Clusters. (Ford F-150 MY21)}
+		\item {C/C++ embedded software development, cross-compiled for an ARM target running QNX RTOS.}
+		\item {GUI development using graphics engine to manage assets, graphics layout and rendering.}
+		\item {Performed software design (UML), static and dynamic testing in compliance with coding standards (MISRA)}
+		\item {Source Control / Change and Configuration Management (Git, Plastic SCM, IBM RTC, Jira) }
+		\end{cvitems}}
+	\cventry
+	{Embedded Software Engineer}
+	{Aptiv}
+	{Queretaro, Mexico}
+	{Jul 2017 – Mar 2018}
+	{\begin{cvitems}
+		\item {Embedded software development for In-Vehicle Infotainment systems. (UConnect MY19)}
+		\item {Developed C++/QML embedded software applications for multiple size/resolution touchscreen displays. 
+			\\ (e.g. Radio AM/FM/SXM, Media, Phone [AndroidAuto, CarPlay] Navigation, Settings, HTML5 Browser)}
+		\item {Developed interfaces to interact with different ECUs on the vehicle through CAN protocol.}
+		\item {Performed root cause analysis to debug and fix software defects (5 Why’s, FTA, DFMEA)}
+		\item {Collaborated with Systems, Integration and Validation engineers to ensure ASPICE compliance. (Peer Review, Unit Test, 
+		SW Integration)}
+		\end{cvitems}}
+	\cventry
+	{Mechatronics Intern}
+	{Schneider Electric}
+	{Monterrey, Mexico}
+	{Aug 2014 – Dec 2016}
+	{\begin{cvitems}
+		\item {R\&D for Miniature Circuit Breakers and other low voltage electrical protection devices (Square D, Multi-9)}
+		\item {Worked with CAD software and modeling techniques for prototyping and structural simulations of miniature circuit 
+		breakers parts.}
+		\item {Designed software for microcontroller systems and graphic user interfaces.}
+		\item {Performed mechanical and electrical testing at the Power Laboratory. (UL, IEC, NEMA)}
+		\item {Research collaboration having worldwide interaction with different design centers and universities.}
+		\end{cvitems}}
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-5mm}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming Languages:  & {\skill{\quad C/C++, Python}} \\
+		Software:  & {\skill{\quad Linux, Git, Qt(QML), OpenCV, ROS}} \\
+		Hardware:  & {\skill{\quad x86, ARM Cortex-A, Raspberry Pi, Arduino, NVIDIA Jetson}} \\
+		Other:  & {\skill{\quad CAN, Ethernet, I2C, SPI, MQTT, Protobuf}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-10mm}
+\cvsection{Projects}
+\vspace{-2mm}
+
+\entrytitlestyle{Autonomous Navigation of Land Vehicles} \\
+\descriptionstyle{\quad\bullet\enskip Implemented algorithms in C++ to process LiDAR point cloud data and identify traversable space, obstacles and routes, performing real time} \\
+\descriptionstyle{\quad\quad data processing and wireless data transmission.} \\
+\descriptionstyle{\quad\bullet\enskip Utilized ROS to integrate the robotic platform solution and generate a visual 3D map of the environment.}
+
+
+\entrytitlestyle{Residential Energy Management System} \\
+\descriptionstyle{\quad\bullet\enskip Contributed to the development of energy monitoring systems for residential electrical installations, leading to company award and patent.} \\
+\descriptionstyle{\quad\bullet\enskip Designed and prototyped electromechanical systems and implemented embedded software for an IoT end-to-end energy metering solution.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Achievements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \vspace{-2mm}
+\cvsection{Achievements}
+\begin{cvhonors}
+	\cvhonor
+	{Silver Prize at FD Innovation Contest}
+	{Impacting strongly traditional products}
+	{Schneider Electric}
+	{Dec 2016}
+	\cvhonor
+	{Patent US 9618548}
+	{Integrated Systems for Miniature Circuit Breaker Load Centers}
+	{Schneider Electric}
+	{Apr 2017}
+\end{cvhonors}
+
+\end{document}

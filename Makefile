@@ -17,7 +17,7 @@ pdf:
 	cp $(FILENAME).pdf ..
 
 png: pdf
-	convert -density 300 $(FILENAME).pdf -quality 90 -colorspace RGB $(IMG_DIR)/$(FILENAME).png
+	convert -density 300 $(FILENAME).pdf -quality 90 -colorspace RGB -flatten $(IMG_DIR)/$(FILENAME).png
 
 clean:
 

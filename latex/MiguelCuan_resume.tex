@@ -52,7 +52,7 @@
 	{\headersocialstyle{
 		\faEnvelope\ mihcuan@gmail.com |
 		\faPhone\ (313) 213-2955 |
-		\faMapMarker\ Dearborn, MI \\
+		\faMapMarker\ Torrance, CA \\
 		\vspace{1mm}
 		\faLinkedinSquare\ linkedin.com/in/mcuan |
 		\faGithub\ github.com/mcuan}}
@@ -79,15 +79,24 @@
 \cvsection{Experience}
 \begin{cventries}
 	\cventry
+	{ADAS Embedded Software Engineer}
+	{Canoo}
+	{Torrance, CA}
+	{Sep 2021 - Present}
+	{\begin{cvitems}
+		\item {Developed embedded software for ADAS domain control module, supporting different layers of the stack (middleware, application)}
+		\item {Implemented software to support communication of applications distributed across a vehicle network.}
+		\item {Supported Systems Engineering requirement elicitation and review for SAE Level 2 features.}
+		\end{cvitems}}
+	\cventry
 	{Connected Vehicle Embedded Software Engineer}
 	{Ford Motor Company}
 	{Dearborn, MI}
-	{Sep 2018 – Present}
+	{Sep 2018 – Sep 2021}
 	{\begin{cvitems}
-		\item {Lead developer at the Enterprise Connectivity Advanced Engineering team, supporting all stages of product development lifecycle including design, implementation, testing, validation and software integration.}
-		\item {Developed C/C++ multi-threaded applications for different embedded platforms and operating systems (QNX, Embedded Linux, Android)}
-		\item {Collaborated on multiple prototypes and proof-of-concepts to test new technologies for the next generation of connected vehicles.}
-		\item {Coordinated software deliveries with internal and third-party suppliers for highly distributed AV systems.}
+		\item {Developed C/C++ multi-threaded applications for different embedded platforms and operating systems (QNX, Embedded Linux, Android), supporting all stages of product development lifecycle including design, implementation, testing, validation and software integration}
+		\item {Created multiple prototypes and proof-of-concepts to test new technologies for the next generation of connected vehicles.}
+		\item {Coordinated software deliveries with internal and third-party suppliers on an autonomous vehicle project.}
 		\end{cvitems}}
 	\cventry
 	{Graphical User Interface Software Engineer}
@@ -95,11 +104,9 @@
 	{Queretaro, Mexico}
 	{Mar 2018 – Sep 2018}
 	{\begin{cvitems}
-		\item {Embedded software development for digital display Instrument Panel Clusters. (Ford F-150 MY21)}
-		\item {C/C++ embedded software development, cross-compiled for an ARM target running QNX RTOS.}
-		\item {GUI development using graphics engine to manage assets, graphics layout and rendering.}
-		\item {Performed software design (UML), static and dynamic testing in compliance with coding standards (MISRA)}
-		\item {Source Control / Change and Configuration Management (Git, Plastic SCM, IBM RTC, Jira) }
+		\item {Developed embedded software for digital display Instrument Panel Clusters.}
+		\item {Performed architecture design (UML), software development (C/C++), static and dynamic testing for MISRA/AUTOSAR compliance, source control (Git, IBM RTC), and change \& configuration management (Jira)}
+		\item {Created GUI applications for ARM Cortex-A target running QNX RTOS using a graphics engine to manage assets, layout, and rendering.}
 		\end{cvitems}}
 	\cventry
 	{Embedded Software Engineer}
@@ -107,13 +114,9 @@
 	{Queretaro, Mexico}
 	{Jul 2017 – Mar 2018}
 	{\begin{cvitems}
-		\item {Embedded software development for In-Vehicle Infotainment systems. (UConnect MY19)}
-		\item {Developed C++/QML embedded software applications for multiple size/resolution touchscreen displays.
-			\\ (e.g. Radio AM/FM/SXM, Media, Phone [AndroidAuto, CarPlay] Navigation, Settings, HTML5 Browser)}
-		\item {Developed interfaces to interact with different ECUs on the vehicle through CAN protocol.}
+		\item {Developed embedded software for Infotainment systems using Qt framework (C++/QML) for multiple size/resolution touchscreen displays.}
+		\item {Implemented GUI features (e.g. Radio AM/FM/SXM, Phone [AndroidAuto, CarPlay] Navigation, Settings, Web Browser)}
 		\item {Performed root cause analysis to debug and fix software defects (5 Why’s, FTA, DFMEA)}
-		\item {Collaborated with Systems, Integration and Validation engineers to ensure ASPICE compliance. (Peer Review, Unit Test,
-		SW Integration)}
 		\end{cvitems}}
 	\cventry
 	{Mechatronics Intern}
@@ -121,12 +124,9 @@
 	{Monterrey, Mexico}
 	{Aug 2014 – Dec 2016}
 	{\begin{cvitems}
-		\item {R\&D for Miniature Circuit Breakers and other low voltage electrical protection devices (Square D, Multi-9)}
-		\item {Worked with CAD software and modeling techniques for prototyping and structural simulations of miniature circuit
-		breakers parts.}
-		\item {Designed software for microcontroller systems and graphic user interfaces.}
-		\item {Performed mechanical and electrical testing at the Power Laboratory. (UL, IEC, NEMA)}
-		\item {Research collaboration having worldwide interaction with different design centers and universities.}
+		\item {Performed R\&D for low voltage electrical protection devices having worldwide interaction with different design centers and universities.}
+		\item {Worked with CAD software to design mechanical parts, perform structural simulations, and prototype miniature circuit breakers parts.}
+		\item {Designed electronic circuits, PCBs, and developed embedded software for a residential energy monitoring system.}
 		\end{cvitems}}
 \end{cventries}
 
@@ -139,10 +139,10 @@
 	\cventry
 	{}
 	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
-		Programming Languages:  & {\skill{\quad C/C++, Python, Java}} \\
-		Software:  & {\skill{\quad Linux, QNX, Android, Git, Qt, OpenCV, ROS}} \\
-		Hardware:  & {\skill{\quad x86, ARM Cortex-A, Raspberry Pi, Arduino, NVIDIA Jetson}} \\
-		Other:  & {\skill{\quad CAN, Ethernet, WiFi, BLE, UWB, MQTT, Protobuf}} \\
+		Programming Languages:  & {\skill{\quad C/C++, Python, Java, Rust}} \\
+		Software:  & {\skill{\quad Linux, QNX, Android, Git, Qt, OpenCV, ROS, MQTT, ZMQ, DDS, Protobuf}} \\
+		Hardware:  & {\skill{\quad x86, ARM, RISC V, Raspberry Pi, Arduino, ESP32, NVIDIA Jetson}} \\
+		Other:  & {\skill{\quad CAN, Ethernet, SPI, I2C, WiFi, BLE, UWB, LoRa, RF}} \\
 		\end{tabular}}}
 	{}
 	{}
@@ -157,14 +157,13 @@
 \vspace{-2mm}
 
 \entrytitlestyle{Autonomous Navigation of Land Vehicles} \\
-\descriptionstyle{\quad\bullet\enskip Implemented algorithms in C++ to process LiDAR point cloud data and identify traversable space, obstacles and routes, performing real time} \\
-\descriptionstyle{\quad\quad data processing and wireless data transmission.} \\
-\descriptionstyle{\quad\bullet\enskip Utilized ROS to integrate the robotic platform solution and generate a visual 3D map of the environment.}
+\descriptionstyle{\quad\bullet\enskip Implemented algorithms in C++ to process LiDAR point cloud data and identify traversable space, obstacles and routes,} \\
+\descriptionstyle{\quad\quad performing real time data processing and wireless data transmission.}
 
 
 \entrytitlestyle{Residential Energy Management System} \\
-\descriptionstyle{\quad\bullet\enskip Contributed to the development of energy monitoring systems for residential electrical installations, leading to company award and patent.} \\
-\descriptionstyle{\quad\bullet\enskip Designed and prototyped electromechanical systems and implemented embedded software for an IoT end-to-end energy metering solution.}
+\descriptionstyle{\quad\bullet\enskip Designed and prototyped electromechanical systems and implemented embedded software for IoT energy metering system,} \\
+\descriptionstyle{\quad\quad leading to company award and patent.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Achievements
